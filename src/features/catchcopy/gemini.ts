@@ -10,8 +10,9 @@ import "server-only";
 import { GoogleGenAI, Type } from "@google/genai";
 import type { CatchCopyInput } from "@/lib/catchcopy-schema";
 
-/** 使用する Gemini モデル名（無料枠で動作する高速モデル）。 */
-const GEMINI_MODEL = "gemini-2.0-flash";
+/** 使用する Gemini モデル名（無料枠で動作する高速モデル）。
+ *  ※ モデルは新しいものが出ると旧版が引退するため、404 が出たら名前を更新する。 */
+const GEMINI_MODEL = "gemini-2.5-flash";
 
 /** 1 回の生成で返すキャッチコピーの本数。 */
 const COPY_COUNT = 5;
